@@ -1,1 +1,1 @@
-(()=>{"use strict";loadPage()})();
+(()=>{"use strict";(()=>{const e=document.getElementById("content"),t=document.createElement("div");e.append(t),t.classList.add("page-content");const n=document.createElement("h1");n.textContent="Welcome to Sushi Palace!",t.append(n);const c=document.createElement("img");c.src="https://assets3.thrillist.com/v1/image/3059772/750x500/flatten;crop;webp=auto;jpeg_quality=50.jpg",t.append(c);const o=document.createElement("p");o.textContent="We have the best sushi in town. Come see for yourself!",t.append(o)})()})();

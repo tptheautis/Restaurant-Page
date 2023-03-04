@@ -1,3 +1,3 @@
 import pageLoad from './pageLoad';
 
-loadPage();
+pageLoad();
