@@ -9,7 +9,13 @@ const createNavigation = () => {
   content.append(button2);
   content.append(button3);
 
-  
+  button1.textContent = 'Home';
+  button2.textContent = 'Menu';
+  button3.textContent = 'Contact';
+
+  button1.classList.add('button');
+  button2.classList.add('button');
+  button3.classList.add('button');
 };
 
 export default createNavigation;
