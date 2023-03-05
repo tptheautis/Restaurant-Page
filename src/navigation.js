@@ -12,14 +12,17 @@ function clear() {
 
 const createNavigation = () => {
   const content = document.getElementById('content');
+  const buttonContainer = document.createElement('div');
+  content.append(buttonContainer);
+  buttonContainer.classList.add('button-container');
 
   const button1 = document.createElement('div');
   const button2 = document.createElement('div');
   const button3 = document.createElement('div');
 
-  content.append(button1);
-  content.append(button2);
-  content.append(button3);
+  buttonContainer.append(button1);
+  buttonContainer.append(button2);
+  buttonContainer.append(button3);
 
   button1.textContent = 'Home';
   button2.textContent = 'Menu';

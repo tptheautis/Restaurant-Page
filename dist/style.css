@@ -1,3 +1,15 @@
+.button-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: black;
+    border-radius: 5px;
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -9,4 +21,5 @@
     width: 200px;
     font-weight: 900;
     margin: 5px;
+    border: 2px solid white;
 }
