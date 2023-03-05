@@ -7,7 +7,7 @@ const createHomePage = () => {
   const header = document.createElement('h1');
   header.textContent = 'Welcome to Sushi Palace!';
   pageContent.append(header);
-  
+
   const image = document.createElement('img');
   image.src = 'https://assets3.thrillist.com/v1/image/3059772/750x500/flatten;crop;webp=auto;jpeg_quality=50.jpg';
   pageContent.append(image);
