@@ -1,3 +1,7 @@
+import createHomePage from './restaurant';
+import createContactPage from './contact';
+import createMenuPage from './menu';
+
 const createNavigation = () => {
   const content = document.getElementById('content');
 
@@ -16,6 +20,16 @@ const createNavigation = () => {
   button1.classList.add('button');
   button2.classList.add('button');
   button3.classList.add('button');
+
+  button1.addEventListener('click', () => {
+    createHomePage();
+  });
+  button2.addEventListener('click', () => {
+    createMenuPage();
+  });
+  button3.addEventListener('click', () => {
+    createContactPage();
+  });
 };
 
 export default createNavigation;
