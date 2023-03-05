@@ -2,6 +2,14 @@ import createHomePage from './restaurant';
 import createContactPage from './contact';
 import createMenuPage from './menu';
 
+function clear() {
+  const content = document.getElementById('content');
+  const pageContent = document.querySelector('.page-content');
+  if (pageContent) {
+    content.removeChild(pageContent);
+  }
+}
+
 const createNavigation = () => {
   const content = document.getElementById('content');
 
@@ -22,12 +30,15 @@ const createNavigation = () => {
   button3.classList.add('button');
 
   button1.addEventListener('click', () => {
+    clear();
     createHomePage();
   });
   button2.addEventListener('click', () => {
+    clear();
     createMenuPage();
   });
   button3.addEventListener('click', () => {
+    clear();
     createContactPage();
   });
 };
